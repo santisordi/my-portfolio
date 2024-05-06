@@ -1,69 +1,63 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import Social from "../components/SocialButtons.astro"
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Gmail.astro";
+import CvIcon from "../components/icons/Cv.astro"
 ---
 
-<Layout title="Porfolio Santiago Sordi">
-<main>
-	<Header></Header>	
-</main>
-</Layout>
+<Layout 
+	title="Portfolio santidev - Desarrollador y programador web"
+	description="La pasion por crear soluciones para tu dia a dia"
+	>
+	<main>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<img
+				src="../../santiIcon.jpg"
+				alt="santi-foto"
+				class="rounded-full size-20 mb-4"
+			/>
+			<h1
+				class="text-white text-5xl font-bold flex flex-row gap-x-10 pb-6"
+			>
+				Hola! Soy Santi!
+				<a
+					href="https://www.linkedin.com/in/santiagosordi/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+					><Badge>Disponible para trabajar</Badge></a
+				>
+			</h1>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
+			<h2 class="text-2xl opacity-70 text-wrap">
+				<span class="text-blue-800"
+					>Desarrollador web y Analista de Datos.</span
+				>
+				De Argentina viviendo en Barcelona 🇪🇸 !
+				<span class="opacity-755"
+					>Especializado en crear aplicaciones unicas 💻</span
+				> 
+			</h2>
+
+			<nav class="flex gap-x-4 mt-8">
+				<Social href="https://www.linkedin.com/in/santiagosordi/">
+					<LinkedInIcon class="size-6"/> LinkedIn
+				</Social>
+				<Social href="https://github.com/santisordi">
+					<GitHubIcon class="size-6"/> Github
+				</Social>
+				<Social href="https://github.com/santisordi">
+					<MailIcon class="size-6"/> Email
+				</Social>
+				<Social href="../../cvs.zip">
+					<CvIcon class="size-6"/> Download Cv
+				</Social>
+
+			</nav>
+					
+		</section>
+	</main>
+</Layout>
