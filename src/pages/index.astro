@@ -1,63 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import Social from "../components/SocialButtons.astro"
-import GitHubIcon from "../components/icons/GitHub.astro";
-import MailIcon from "../components/icons/Gmail.astro";
-import CvIcon from "../components/icons/Cv.astro"
+import SectionContainer from "../components/SectionContainer.astro";
+import Experience from "../components/Experience.astro";
+import BirefCase from "../components/icons/BirefCase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Santi from "../components/Santi.astro";
 ---
 
 <Layout 
-	title="Portfolio santidev - Desarrollador y programador web"
+	title="Portfolio santiDev - Desarrollador y programador web"
 	description="La pasion por crear soluciones para tu dia a dia"
 	>
-	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<img
-				src="../../santiIcon.jpg"
-				alt="santi-foto"
-				class="rounded-full size-20 mb-4"
-			/>
-			<h1
-				class="text-white text-5xl font-bold flex flex-row gap-x-10 pb-6"
-			>
-				Hola! Soy Santi!
-				<a
-					href="https://www.linkedin.com/in/santiagosordi/"
-					target="_blank"
-					rel="noopener"
-					class="flex justify-center items-center"
-					><Badge>Disponible para trabajar</Badge></a
-				>
-			</h1>
+	<main class="px-4">
+		<SectionContainer class="py-20 pb:10 md:py-30 md:pb-20">
+			<Santi />
+		</SectionContainer>
 
-			<h2 class="text-2xl opacity-70 text-wrap">
-				<span class="text-blue-800"
-					>Desarrollador web y Analista de Datos.</span
-				>
-				De Argentina viviendo en Barcelona 🇪🇸 !
-				<span class="opacity-755"
-					>Especializado en crear aplicaciones unicas 💻</span
-				> 
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl md:text-3xl font-bold mb-6 flex gap-x-3 items-center">
+				<BirefCase class="size-7" />
+				Experiencia Laboral
 			</h2>
+			<Experience />
+		</SectionContainer>
 
-			<nav class="flex gap-x-4 mt-8">
-				<Social href="https://www.linkedin.com/in/santiagosordi/">
-					<LinkedInIcon class="size-6"/> LinkedIn
-				</Social>
-				<Social href="https://github.com/santisordi">
-					<GitHubIcon class="size-6"/> Github
-				</Social>
-				<Social href="https://github.com/santisordi">
-					<MailIcon class="size-6"/> Email
-				</Social>
-				<Social href="../../cvs.zip">
-					<CvIcon class="size-6"/> Download Cv
-				</Social>
+		<SectionContainer id="proyectos">
+			<h2 class="text-2xl md:text-3xl font-bold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7" />
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
 
-			</nav>
-					
-		</section>
+		<SectionContainer id="sobre-mi">
+			<h2 class="text-2xl md:text-3xl font-bold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7" />
+				Sobre Mi
+			</h2>
+			<AboutMe />
+		</SectionContainer>
 	</main>
 </Layout>
+

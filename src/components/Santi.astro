@@ -1,0 +1,52 @@
+---
+import Badge from "./Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import Social from "../components/SocialButtons.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Gmail.astro";
+import CvIcon from "../components/icons/Cv.astro";
+---
+
+<div class="flex flex-col gap-4 mb-4">
+    <img
+        src="/santiIcon.jpg"
+        alt="santi-foto"
+        class="rounded-full size-20 mb-4 shadow-lg"
+    />
+    <a
+        href="https://www.linkedin.com/in/santiagosordi/"
+        target="_blank"
+        rel="noopener"
+        class="flex flex-coljustify-center items-center"
+        ><Badge>Disponible para trabajar</Badge></a
+    >
+    <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-10 pb-4 lg:pb-6"
+    >
+        Hola, soy Santi!
+    </h1>
+    <h2 class="text-xl lg:text-2xl opacity-70 text-wrap max-w-[800px]">
+        <span class="text-sky-500"
+            >Desarrollador web y Analista de Datos.</span
+        >
+        De Argentina viviendo en Barcelona 🇪🇸 !
+        <span class="opacity-755 text-sky-100"
+            >Especializado en crear aplicaciones unicas 💻</span
+        >
+    </h2>
+
+    <nav class="flex flex-col sm:flex-row justify-center gap-x-4 mt-10 md:mt-12 flex-wraps gap-4">
+        <Social href="https://www.linkedin.com/in/santiagosordi/">
+            <LinkedInIcon class="size-5 md:size-6" /> LinkedIn
+        </Social>
+        <Social href="https://github.com/santisordi">
+            <GitHubIcon class="size-5 md:size-6" /> Github
+        </Social>
+        <Social href="mailto:santiagosordi™gmail.com">
+            <MailIcon class="size-5 md:size-6" /> Email
+        </Social>
+        <Social href="../../cvs.zip">
+            <CvIcon class="size-5 md:size-6" /> Download Cv
+        </Social>
+    </nav>
+</div>
