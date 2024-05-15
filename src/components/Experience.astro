@@ -1,37 +1,34 @@
 ---
-import ExperienceItems from "./ExperienceItems.astro"
+import ExperienceItems from "./ExperienceItems.astro";
 
 const EXPERIENCIE = [
     {
-        date: 'Marzo 2023',
-        title: 'DataGuara Desarrollador web',
-        description:'Desarrollo de aplicaciones web responsive, utilizando HTML, CSS, JavaScript, Bootstrap, Tailwind y ReactJS. Competencia en la creación de APIs RESTful para aplicaciones de Ciencia de Datos. Diseño y desarrollo avanzado de interfaces de usuario (UI) para aplicaciones de minería de datos con Node.js. Experiencia en Git para control de versiones y Docker para la contenerización.',
-
-    
+        date: " Dic 2023 - Actualidad",
+        title: "Proyectos Freelance",
+        description:
+            "Desarrollo de aplicaciones web y landing pages.",
     },
     {
-        date: ' Enero 2023',
-        title: 'Proyectos Freelance',
-        description:'Desarrollo de aplicaciones web (E-Commerce) y landing pages.',
-
-    
+        date: "Mayo - Dic 2023",
+        title: "DataGuara Desarrollador web",
+        description:
+            "Desarrollo de aplicaciones web responsive. Competencia en la creación de APIs RESTful NodeJS. Experiencia en Git para control de versiones y Docker para la contenerización.",
     },
-     {
-        date: 'Mayo 2013 - Marzo 2023',
-        title: 'Zurich compañia de seguros',
-        description:'Evaluación de la integridad en reclamaciones de seguros automotor. Pago a proveedores, reintegro a asegurados. Seguimiento, control y cierre de los casos asignados.'
-    }
-]
+    {
+        date: "Mayo 2013 - Dic 2022",
+        title: "Zurich compañia de seguros",
+        description:
+            "Evaluación de la integridad en reclamaciones de seguros automotor. Control de stock y reservas. Pago a proveedores. Seguimiento, control y cierre de los casos asignados.",
+    },
+];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">                  
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
     {
-        EXPERIENCIE.map(experiencie => (
+        EXPERIENCIE.map((experiencie) => (
             <li class="mb-10 ms-4">
-                <ExperienceItems {...experiencie}/>
+                <ExperienceItems {...experiencie} />
             </li>
         ))
     }
 </ol>
-
-
