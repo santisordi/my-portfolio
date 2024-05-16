@@ -21,7 +21,7 @@ const { description, title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body >
+	<body>
 		<Header/>
 		<slot />
 		<Footer />
@@ -36,14 +36,14 @@ const { description, title } = Astro.props;
 		scroll-behavior: smooth;
 	}
 	body{
+        overscroll-behavior: none;
 		background-color: #050505;
 		background-image: url('/fondoArcade.jpeg');
 		background-repeat: no-repeat;
 		background-attachment:fixed;
-		background-position: center center;
+		background-position: center top;
 		background-size:cover;
-		display: flex;
-		flex-direction: column;
+
 	}
 	/* por si el usuairo desactiva animaciones de su OS */
 	@media (prefers-reduce-motion: reduce) {

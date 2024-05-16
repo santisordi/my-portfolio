@@ -8,6 +8,9 @@ import GitHubIcon from "./icons/GitHub.astro";
 import ReactiIcon from "./icons/React.astro";
 import viteIcon from "./icons/Vite.astro";
 import bootIcon from "./icons/Bootstrap.astro"
+import sassIcon from "./icons/Sass.astro"
+import htmlIcon from "./icons/Html.astro"
+import cssIcon from "./icons/Css.astro"
 
 const TAGS = {
     ASTROICON: {
@@ -40,6 +43,21 @@ const TAGS = {
         name: "Bootstrap",
         class: "bg-black ",
         icon: bootIcon,
+    },
+    SASS: {
+        name: "Sass",
+        class: "bg-black ",
+        icon: sassIcon,
+    },
+    HTML: {
+        name: "HTML5",
+        class: "bg-black ",
+        icon: htmlIcon,
+    },
+    CSS: {
+        name: "CSS",
+        class: "bg-black ",
+        icon: cssIcon,
     }
 };
 
@@ -78,6 +96,15 @@ const PROJECTS = [
         github: "https://github.com/santisordi/4str0/tree/develop",
         image: "/projects/portfolioReact.png",
         tags: [TAGS.TAILWIND, TAGS.JS, TAGS.REACT],
+    },
+    {
+        title: "Lucrecia casa de campo",
+        description:
+            "Website diseñado puro e integramente con hmtl, css y sass",
+        link: "https://lalucreciacasadecampo.netlify.app",
+        github: "https://github.com/santisordi/DesarrolloWeb-LaLucrecia",
+        image: "/projects/ProyectoWeb-La Lucrecia.jpg",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.SASS],
     },
 ];
 ---
