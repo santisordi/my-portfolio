@@ -1,7 +1,7 @@
 ---
-import '@fontsource-variable/onest';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import "@fontsource-variable/onest";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 interface Props {
 	title: string;
@@ -22,7 +22,8 @@ const { description, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header/>
+
+		<Header />
 		<slot />
 		<Footer />
 	</body>
@@ -32,22 +33,21 @@ const { description, title } = Astro.props;
 		color-scheme: light dark;
 	}
 	html {
-		font-family: 'Onest variable', system-ui, sans-serif;
+		font-family: "Onest variable", system-ui, sans-serif;
 		scroll-behavior: smooth;
 	}
-	body{
-        overscroll-behavior: none;
-		background-color: #050505;
-		background-image: url('/fondoArcade.jpeg');
+	body {
+		overscroll-behavior: none;
+		background-image: url("degradadoFondo.jpg");
 		background-repeat: no-repeat;
-		background-attachment:fixed;
+		background-attachment: fixed;
 		background-position: center top;
-		background-size:cover;
+		background-size: cover;
 
 	}
 	/* por si el usuairo desactiva animaciones de su OS */
 	@media (prefers-reduce-motion: reduce) {
-		html{
+		html {
 			scroll-behavior: auto;
 		}
 	}
