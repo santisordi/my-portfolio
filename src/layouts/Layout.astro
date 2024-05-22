@@ -37,7 +37,7 @@ const { description, title } = Astro.props;
 		scroll-behavior: smooth;
 	}
 	body {
-		background-color: black;
+
 		background-image: url("../../degradadoFondo.jpg");
 		overscroll-behavior: none;
 		background-repeat: no-repeat;
@@ -51,4 +51,11 @@ const { description, title } = Astro.props;
 			scroll-behavior: auto;
 		}
 	}
+	@media (max-width: 768px) {
+ 		 body {
+    		background-size:cover ;
+			background-position: center center; 
+			
+  }
+}
 </style>
