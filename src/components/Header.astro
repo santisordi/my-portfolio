@@ -25,7 +25,7 @@ const navItems = [
 ]
 ---
 
-<header class= " bg-black flex items-center justify-center w-full xl:w-[1120px] md:mx-auto mt-8">
+<header class= " bg-black text-gray-100  flex items-center justify-center w-full xl:w-[1120px] md:mx-auto mt-8">
     <nav class="
     flex flex-row flex-wrap gap-x-3 md:gap-x-7 lg:gap-x-10 
     justify-center
@@ -34,7 +34,7 @@ const navItems = [
     opacity-80 group border rounded-2xl border-white/30 relative cursor-pointer overflow-hidden whitespace-nowrap px-5 py-3  transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)]">
         {
             navItems.map((link)=>(
-                <a class= "hover:text-violet-950 ;"
+                <a class= "hover:text-violet-950;"
                     aria-label={link.label}
                     href={link.url}>
                         {link.title}
