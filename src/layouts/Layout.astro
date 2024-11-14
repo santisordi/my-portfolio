@@ -22,13 +22,11 @@ const { description, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-
 		<Header />
-		<div class="inset-0 -z-10 h-full w-full items-center py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+		<div class="inset-0 -z-10 h-full w-full items-center py-10 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
 				<slot />
 		<Footer />
-		</div>
-	
+		</div>	
 	</body>
 </html>
 <style is:global>
